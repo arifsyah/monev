@@ -7,7 +7,7 @@
             <th class="column-title" width="20px;">No </th>
             <th class="column-title">Nama Unit Kerja </th>
             <th class="column-title" width="30%">Deskripsi</th>
-            <th class="column-title" width="">Dibuat oleh</th>
+            <!-- <th class="column-title" width="">Dibuat oleh</th> -->
             <th class="column-title">Options</th>
             <th class="bulk-actions" colspan="7">
                 <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
@@ -27,7 +27,7 @@
 			        <td class=" "><?php echo $key + 1; ?></td>
 			        <td class=" ">{{ $value->title }}</td>
 			        <td class=" ">{{ $value->description }}</td>
-			        <td class=" ">{{ $value->created->name }}<br/>{{ date_lang_reformat_long($value->created_at) }}</td>
+			        <!-- <td class=" ">{{ $value->created->name }}<br/>{{ date_lang_reformat_long($value->created_at) }}</td> -->
 			        
 			        <td class=" last">
 			        	<a class="btn btn-sm btn-default" onclick="detailpopup({{$value->id}})" href="javascript:void(0)" title="View Detail"><i class='fa fa-search'></i></a>

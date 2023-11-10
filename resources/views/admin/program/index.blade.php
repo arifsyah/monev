@@ -107,6 +107,7 @@
     }
     
     function detailProgram(id){
+        
         $('#id_program_modal').val(id);
         $('#id_program_main').val(id);
         $.ajax({

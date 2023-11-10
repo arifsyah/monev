@@ -7,7 +7,7 @@
             <th class="column-title" width="20px;">No </th>
             <th class="column-title">Nama Program </th>
             <th class="column-title" width="30%">Deskripsi</th>
-            <th class="column-title" width="">Dibuat oleh</th>
+            <!-- <th class="column-title" width="">Dibuat oleh</th> -->
             <th class="column-title">Options</th>
             <th class="bulk-actions" colspan="7">
                 <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
@@ -27,7 +27,7 @@
 			        <td class=" "><?php echo $key + 1; ?></td>
 			        <td class=" ">{{ $value->title }}</td>
 			        <td class=" ">{{ $value->description }}</td>
-			        <td class=" ">{{ $value->created->name }}<br/>{{ date_lang_reformat_long($value->created_at) }}</td>
+			        <!-- <td class=" ">{{ $value->created->name }}<br/>{{ date_lang_reformat_long($value->created_at) }}</td> -->
 			        
 			        <td class=" last">
 			        	<!-- <a class="btn btn-sm btn-default" onclick="detailpopup({{$value->id}})" href="javascript:void(0)" title="View Detail"><i class='fa fa-search'></i></a> -->
@@ -134,7 +134,7 @@
 									<div class="row form-group{{ $errors->has('target_program') ? ' has-error' : '' }}"> 
 										<label class="control-label col-md-3 col-sm-3 col-xs-12" for="target_program">Target Program <span class="required">*</span></label>
 										<div class="col-md-9 col-sm-9 col-xs-12">
-											<input type="text" id="target_program" name="target_program" required="required" class="form-control col-xs-12">
+											<input type="number" id="target_program" name="target_program" required="required" class="form-control col-xs-12">
 										</div>
 									</div>
 									
@@ -157,19 +157,19 @@
 										<div class="col-md-9 col-sm-9 col-xs-12">
 											<div class="row">
 												<div class="col-md-3 col-sm-3 col-xs-3">
-													<input type="text" id="target_program_tw_1" name="target_program_tw_1" placeholder="Triwulan I" required="required" class="form-control col-xs-12">
+													<input type="number" id="target_program_tw_1" name="target_program_tw_1" placeholder="Triwulan I" required="required" class="form-control col-xs-12">
 												</div>
 
 												<div class="col-md-3 col-sm-3 col-xs-3">
-													<input type="text" id="target_program_tw_2" name="target_program_tw_2" placeholder="Triwulan II" required="required" class="form-control col-xs-12">
+													<input type="number" id="target_program_tw_2" name="target_program_tw_2" placeholder="Triwulan II" required="required" class="form-control col-xs-12">
 												</div>
 
 												<div class="col-md-3 col-sm-3 col-xs-3">
-													<input type="text" id="target_program_tw_3" name="target_program_tw_3" placeholder="Triwulan III" required="required" class="form-control col-xs-12">
+													<input type="number" id="target_program_tw_3" name="target_program_tw_3" placeholder="Triwulan III" required="required" class="form-control col-xs-12">
 												</div>
 
 												<div class="col-md-3 col-sm-3 col-xs-3">
-													<input type="text" id="target_program_tw_4" name="target_program_tw_4" placeholder="Triwulan IV" required="required" class="form-control col-xs-12">
+													<input type="number" id="target_program_tw_4" name="target_program_tw_4" placeholder="Triwulan IV" required="required" class="form-control col-xs-12">
 												</div>
 											</div>
 										</div>
@@ -266,7 +266,7 @@
 					<div class="row form-group"> 
 						<label class="control-label col-md-3 col-sm-3 col-xs-12" for="target_program_edit">Target Program <span class="required">*</span></label>
 						<div class="col-md-9 col-sm-9 col-xs-12">
-							<input type="text" id="target_program_edit" name="target_program_edit" required="required" class="form-control col-xs-12">
+							<input type="number" id="target_program_edit" name="target_program_edit" required="required" class="form-control col-xs-12">
 						</div>
 					</div>
 					
@@ -289,19 +289,19 @@
 						<div class="col-md-9 col-sm-9 col-xs-12">
 							<div class="row">
 								<div class="col-md-3 col-sm-3 col-xs-3">
-									<input type="text" id="target_program_tw_1_edit" name="target_program_tw_1_edit" placeholder="Triwulan I" required="required" class="form-control col-xs-12">
+									<input type="number" id="target_program_tw_1_edit" name="target_program_tw_1_edit" placeholder="Triwulan I" required="required" class="form-control col-xs-12">
 								</div>
 
 								<div class="col-md-3 col-sm-3 col-xs-3">
-									<input type="text" id="target_program_tw_2_edit" name="target_program_tw_2_edit" placeholder="Triwulan II" required="required" class="form-control col-xs-12">
+									<input type="number" id="target_program_tw_2_edit" name="target_program_tw_2_edit" placeholder="Triwulan II" required="required" class="form-control col-xs-12">
 								</div>
 
 								<div class="col-md-3 col-sm-3 col-xs-3">
-									<input type="text" id="target_program_tw_3_edit" name="target_program_tw_3_edit" placeholder="Triwulan III" required="required" class="form-control col-xs-12">
+									<input type="number" id="target_program_tw_3_edit" name="target_program_tw_3_edit" placeholder="Triwulan III" required="required" class="form-control col-xs-12">
 								</div>
 
 								<div class="col-md-3 col-sm-3 col-xs-3">
-									<input type="text" id="target_program_tw_4_edit" name="target_program_tw_4_edit" placeholder="Triwulan IV" required="required" class="form-control col-xs-12">
+									<input type="number" id="target_program_tw_4_edit" name="target_program_tw_4_edit" placeholder="Triwulan IV" required="required" class="form-control col-xs-12">
 								</div>
 							</div>
 						</div>
